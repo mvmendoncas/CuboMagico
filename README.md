@@ -61,7 +61,7 @@ Funções de teclas:
 
 `"7"`: girar lado de centro azul e verde ao mesmo tempo
 
-"8"`: girar lado de centro vermelho e laranja ao mesmo tempo
+`"8"`: girar lado de centro vermelho e laranja ao mesmo tempo
 
 
 
