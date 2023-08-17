@@ -51,6 +51,21 @@ Funções de teclas:
 
 `"p"` ou `"P"`: iniciar/parar movimentos aleatórios
 
+`"3"`: desaparecer o cubo
+
+`"4"`: desaparecer o cubo
+
+`"5"`: aumentar e diminuir o cubo
+
+`"6"`: girar lado de centro branco e amarelo ao mesmo tempo
+
+`"7"`: girar lado de centro azul e verde ao mesmo tempo
+
+"8"`: girar lado de centro vermelho e laranja ao mesmo tempo
+
+
+
+
 
 
 
