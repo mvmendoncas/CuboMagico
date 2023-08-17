@@ -1,6 +1,10 @@
 # CuboMagico
 Projeto criado com o intuito de obter nota para a segunda VA da disciplica de Computação Gráfica.
 
+### Pré-requisitos
+
+Ter instalado  G++ e OpenGl no Linux
+
 ### Compilar e executar no Linux
 
 Para compilar, digite no terminal:
