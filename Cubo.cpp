@@ -465,52 +465,60 @@ void Cubo::tecla9() {
     cout << cubinhos[k].rotPhi << endl;
 }
 
-// Função para girar o cubinho em torno do eixo z
+// Gira o cubinho associado à posição 13 no array de cubinhos
+// no sentido horário (aumentando o ângulo de rotação gamma).
 void Cubo::tecla0() {
     int k;
     k = mapa2[13];
-    cubinhos[k].rotGamma += DR;
-    cout << cubinhos[k].rotGamma << endl;
+    cubinhos[k].rotGamma += DR; // Incrementa o ângulo de rotação gamma
+    cout << cubinhos[k].rotGamma << endl; // Imprime o novo ângulo
 }
 
+// Gira o cubinho associado à posição 13 no array de cubinhos
+// no sentido anti-horário (diminuindo o ângulo de rotação theta).
 void Cubo::tecla1() {
     int k;
     k = mapa2[13];
-    cubinhos[k].rotTheta -= DR;
-    cout << cubinhos[k].rotTheta << endl;
+    cubinhos[k].rotTheta -= DR; // Decrementa o ângulo de rotação theta
+    cout << cubinhos[k].rotTheta << endl; // Imprime o novo ângulo
 }
 
+// Ativa todos os cubinhos do cubo (27 cubinhos no total).
 void Cubo::tecla2() {
     for (int i = 0; i < 27; i++) {
-        mapa[i] = true;
+        mapa[i] = true; // Define todas as posições do mapa como verdadeiras
     }
 }
 
+// Desativa todos os cubinhos do cubo (27 cubinhos no total).
 void Cubo::tecla3() {
     for (int i = 0; i < 27; i++) {
-        mapa[i] = false;
+        mapa[i] = false; // Define todas as posições do mapa como falsas
     }
 }
 
+// Inverte o estado de ativação de todos os cubinhos do cubo (27 cubinhos no total).
 void Cubo::tecla4() {
     for (int i = 0; i < 27; i++) {
-        mapa[i] = !mapa[i];
+        mapa[i] = !mapa[i]; // Inverte o estado de cada posição do mapa
     }
 }
 
+// Inverte o estado de ativação de todos os cubinhos do cubo, exceto o do centro (posição 13).
 void Cubo::tecla5() {
     int k;
 
+    // Inverte o estado de ativação de cada cubinho, exceto o do centro (posição 13).
     for (int i = 0; i < 27; i++) {
         k = mapa2[i];
         mapa[k] = !mapa[k];
     }
+
     k = mapa2[13];
-    mapa[k] = true;
+    mapa[k] = true; // Garante que o cubinho do centro sempre esteja ativo
 
     return;
 }
-
 // Função para rearranjar o mapa do cubo após um movimento
 void Cubo::rearranjaMapa(char c) {
 
