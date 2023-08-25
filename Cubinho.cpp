@@ -351,6 +351,7 @@ void Cubinho::displayCubinho() {
         }
     }
 
+    //Chamada para salvar a matriz de transformação atual e empilhá-la
     glPushMatrix();
 
     // Aplicações de transformações (translação e rotação)
@@ -362,6 +363,7 @@ void Cubinho::displayCubinho() {
     // Exibe o contorno do cubo
     displayContornoCubinho(pts);
 
+    //As faces do cubo são renderizadas usando uma combinação de glBegin(GL_QUADS) e glEnd()
     glColor3fv(cor::GREEN);
     glBegin(GL_QUADS);
     glVertex3fv(pts[2]);
@@ -417,5 +419,6 @@ void Cubinho::displayCubinho() {
     glVertex3fv(pts[2 + 4]);
     glEnd();
 
+    //Chamada para restaurar a matriz de transformação anterior
     glPopMatrix();
 }
